@@ -1,0 +1,12 @@
+﻿@model WebApp.Models.BaseViewModel
+
+@{
+    Layout = null;
+}
+
+<h3>Hello from my View Component</h3>
+
+<!-- Gets the label via the method on the base class -->
+<p>@Model.GetLabel(nameof(BaseViewModel.UserComment)):</p>
+
+<textarea asp-for="UserComment"></textarea>
